@@ -1,6 +1,7 @@
 import uuid
 import numpy as np
 
+#race gene of human
 ALP=np.array([1,0,0,0])
 BET=np.array([0,1,0,0])
 GAM=np.array([0,0,1,0])
@@ -9,6 +10,21 @@ THE=np.array([0,0,0,1])
 
 
 class Human:
+    '''
+    Human class:
+    ----------------
+    name : uuid. Automatically generated.
+    A human has a name, age, race gene, conservative, marryed, combination.
+
+    Methods:
+    ----------------
+    grown() : after a time period, the human will grow up.
+    isMarryed() : check if the human is marryed.
+    isDeath() : check if the human is dead.
+    
+
+
+    '''
     race=None
     nation=None
     lifelimit=8
